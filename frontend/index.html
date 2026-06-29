@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8'/>
+  <title>DATA CORE PROIDU</title>
+</head>
+<body style="background:#0b0f14;color:white;font-family:system-ui">
+  <h1>DATA CORE</h1>
+  <input id='q' placeholder='поиск вузов...'/>
+  <button onclick='search()'>search</button>
+  <pre id='out'></pre>
+
+<script>
+async function search(){
+ const q=document.getElementById('q').value;
+ const res=await fetch('https://hgivyjjethjwswjrvroy.functions.supabase.co/search?q='+q);
+ const data=await res.json();
+ document.getElementById('out').innerText=JSON.stringify(data,null,2);
+}
+</script>
+</body>
+</html>
