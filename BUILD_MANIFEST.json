@@ -1,0 +1,32 @@
+{
+  "name": "PROIDU exact working build",
+  "created_at": "2026-07-05T22:27:23Z",
+  "mode": "non-invasive exact restore",
+  "notes": [
+    "UI and functions are preserved from uploaded main files.",
+    "No new design, no replacement React source, no rebuilt assets.",
+    "Live search endpoint is already inside JS bundle.",
+    "Telegram WebApp SDK is loaded from index.html."
+  ],
+  "files": {
+    "index.html": {
+      "sha256": "b1ca70a5c39a3a30c23eed4d8d08aca6af93f68a84a6602f3567343e3a01a53d",
+      "bytes": 700
+    },
+    "assets/index-B8QPXbw2.js": {
+      "sha256": "746a86dd7a35b30a6b963775678978958fde028cadbbcbe71c40b1e0fc4ffbe7",
+      "bytes": 253784
+    },
+    "assets/index-B2qev5cU.css": {
+      "sha256": "4424e950de3683f5c3db5a98eebc183ea5214f6c47f9b5f75b394946e9747a1f",
+      "bytes": 21718
+    }
+  },
+  "detected": {
+    "telegram_web_app_script": true,
+    "live_search_endpoint": true,
+    "route_endpoint": true,
+    "telegram_payments_endpoint_reference": true,
+    "telegram_stars_149": true
+  }
+}
